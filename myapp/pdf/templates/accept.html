@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>Document</title>
+            
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="raw m-5">
+                <div class="col-md-12">
+                    <h1>CV generator</h1>
+                    <hr>
+                </div>
+            </div>
+            
+            <div class="raw m-5">
+                <div class="col-md-12">   
+                    <h4>please fill out your details</h4>
+                </div>
+            </div>        
+ 
+            <div class="raw m-5">
+                <div class="col-md-7">  
+                
+                <form method="POST">
+                    {% csrf_token %}
+                    
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" class="form-control" id="name" nam="name" placeholder="Enter your name">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="">Phone</label>
+                        <input type="text" class="form-control" id="phone" nam="phone" placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Enail</label>
+                        <input type="text" class="form-control" id="email" nam="email" placeholder="Enter your email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="">About You</label>
+                        <textarea type="text" class="form-control" id="about_you" nam="about_you" placeholder="Enter your profile"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Degree</label>
+                        <input type="text" class="form-control" id="degree" nam="degree" placeholder="Enter your degree">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">School</label>
+                        <input type="text" class="form-control" id="school" nam="school" placeholder="Enter your school">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">University</label>
+                        <input type="text" class="form-control" id="university" nam="university" placeholder="Enter your university">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Job Experience</label>
+                        <input type="text" class="form-control" id="previous_work" nam="previous_work" placeholder="Enter your job experience">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="">Skills</label>
+                        <input type="text" class="form-control" id="skill" nam="skill" placeholder="Enter Skills">
+                    </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+    
